@@ -6,4 +6,14 @@ function getRandomWord(){
     return words[index];
 }
 
-console.log(getRandomWord());
+const word = getRandomWord();
+const mask = getWordMask(word);
+
+function getWordMask(word){
+    let result = '';
+    for (let index = 0; index < word.length; index++) {
+        result = result + '*'; 
+    }
+    return result;
+}
+document.getElementsByClassName("word")[0].innerText = mask;
