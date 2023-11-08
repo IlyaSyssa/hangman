@@ -20,6 +20,6 @@ let playerLives = 9;
 function onClick() {
   alert('test');
 }
-document.getElementsByClassName("word")[0].
+const text = document.getElementsByClassName("word")[0].value;
 
 
