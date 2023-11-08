@@ -19,7 +19,8 @@ let playerLives = 9;
 
 function onClick() {
   alert('test');
+  const text = document.getElementsByClassName("word")[0].value;
 }
-const text = document.getElementsByClassName("word")[0].value;
+
 
 
