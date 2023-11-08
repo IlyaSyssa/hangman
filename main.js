@@ -15,7 +15,7 @@ function getWordMask(word){
     return result;
 }
 document.getElementsByClassName("word")[0].innerText = mask;
-let lives = 9;
+let playerLives = 9;
 
 function onClick() {
   alert('test');
