@@ -5,21 +5,25 @@ function getRandomWord(){
 }
 
 const word = getRandomWord();
-const mask = getWordMask(word);
+const arrayLetters = [];
 
-function getWordMask(word){
+function getWordMask(word, arrayLetters){
     let result = '';
     for (let index = 0; index < word.length; index++) {
-        result = result + '*'; 
+        if (arrayLetters.includes(word[index])) { 
+            result = result + word[index];
+        } else {
+            result = result + '*';
+        }
     }
     return result;
 }
-document.getElementsByClassName("word")[0].innerText = mask;
+document.getElementsByClassName("word")[0].innerText = getWordMask(word, arrayLetters);
 let playerLives = 9;
 
 function onClick() {
-  alert('test');
-  const text = document.getElementsByClassName("word")[0].value;
+  const text = document.getElementsByClassName("word-input")[0].value;
+  alert(text);
 }
 
 
