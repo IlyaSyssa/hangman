@@ -2,34 +2,38 @@
     text-align: center;
     font-family: nabla;
     font-size: 60px;
-  }
-.lives {
+}
+
+.lives, .word, .word-input, .button {
     font-family: nabla;
     font-size: 30px;
 }
-.word {
-    font-family: nabla;
-    font-size: 30px;
-}
-.lives {
-    font-family: nabla;
-    font-size: 30px;
-}
-.word-input {
-    font-family: nabla;
-    font-size: 30px;
-}
-.button {
-    font-family: nabla;
-    font-size: 30px;
-}
-body{
-    
+
+body {
     background-color: #4f5657;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
-.downName{
-    padding: 300px;
-    text-align: left;
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.game-creator, .instagram-link {
     font-family: nabla;
+    font-size: 18px;
+    color: #fff; /* Цвет ссылки (замените на свой) */
+    text-decoration: none;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
 }
