@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    font-family: nabla;
+    font-size: 60px;
+  }
+.lives {
+    font-family: nabla;
+    font-size: 30px;
+}
+.word {
+    font-family: nabla;
+    font-size: 30px;
+}
+.lives {
+    font-family: nabla;
+    font-size: 30px;
+}
+.word-input {
+    font-family: nabla;
+    font-size: 30px;
+}
+.button {
+    font-family: nabla;
+    font-size: 30px;
+}
+body{
+    
+    background-color: #4f5657;
+    padding: 20px;
+}
+.downName{
+    padding: 300px;
+    text-align: left;
+    font-family: nabla;
+}

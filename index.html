@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hangman</title>
     <link rel="stylesheet" type="text/css" href="./main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@500&family=Nabla&display=swap');
+      </style>
 </head>
 <body>
+    <div class="header"></div>
     <h1 class="title">Hangman</h1>
     <p class="lives">9 lives</p>
     <p class="word">------</p>
     <input class="word-input" maxlength="1">
-    <button onclick="onClick()">Submit</button>
+    <button class="button" onclick="onClick()">Submit</button>
     <script src="./words.js"></script>
     <script src="./main.js"></script>
+    <p class="downName"> The game created by Syssa Ilya </p>
 </body>
 </html>
