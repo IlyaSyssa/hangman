@@ -33,6 +33,33 @@ function onClick() {
   }
  
 }
+function displayResult(isWinner) {
+    const resultMessage = isWinner ? 'You win!' : 'You lose. Try again.';
+    document.getElementsByClassName("result")[0].innerText = resultMessage;
+    document.getElementsByClassName("word-input")[0].disabled = true; // Запретить ввод после окончания игры
+}
 
+function updateUI() {
+    document.getElementsByClassName("word")[0].innerText = getWordMask(word, arrayLetters);
+    document.getElementsByClassName("lives")[0].innerText = `${lives} Lives`;
+
+    if (getWordMask(word, arrayLetters) === word) {
+        displayResult(true); // Игрок угадал слово
+    } else if (lives <= 0) {
+        displayResult(false); // Игрок закончил жизни
+    }
+}
+
+function onClick() {
+    if (lives > 0 && getWordMask(word, arrayLetters) !== word) {
+        const text = document.getElementsByClassName("word-input")[0].value.toLowerCase();
+        if (word.split("").includes(text)) {
+            arrayLetters.push(text);
+        } else {
+            lives = lives - 1;
+        }
+        updateUI();
+    }
+}
 
 

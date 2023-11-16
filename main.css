@@ -37,3 +37,8 @@ body {
 .instagram-link:hover {
     text-decoration: underline;
 }
+.result {
+    text-align: center;
+    font-family: nabla;
+    font-size: 30px;
+}
